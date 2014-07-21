@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/tariffs"
+           xmlns="http://example.com/tariffs">
+    <xs:include schemaLocation="tariffType.xsd"/>
+    <xs:complexType name="tariffsType">
+        <xs:sequence>
+            <xs:element name="tariff" type="tariffType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<t:tariffs xmlns:t="http://example.com/tariffs"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://example.com/tariffs ../xsd/tariffsSchema.xsd">
+    <tariff>
+        <name>Pay more - talk less!</name>
+        <operatorName>GreedyCom</operatorName>
+        <payroll>150</payroll>
+        <callPrices>
+            <innerPrice>15</innerPrice>
+            <outerPrice>60</outerPrice>
+            <fixedLocation>120</fixedLocation>
+        </callPrices>
+        <smsPrice>10</smsPrice>
+        <parameters>
+            <connectionFee>500</connectionFee>
+            <favoriteNumbers>
+                <number>+7-707-154-15-44</number>
+                <number>8-505-555-55-55</number>
+            </favoriteNumbers>
+        </parameters>
+    </tariff>
+    <tariff>
+        <name>The Good Tariff</name>
+        <operatorName>NoGreedyCom</operatorName>
+        <payroll>0</payroll>
+        <callPrices>
+            <innerPrice>5</innerPrice>
+            <outerPrice>15</outerPrice>
+            <fixedLocation>20</fixedLocation>
+        </callPrices>
+        <smsPrice>10</smsPrice>
+        <parameters>
+            <tarriffing>minute</tarriffing>
+        </parameters>
+    </tariff>
+    <tariff>
+        <name>YoYoYo</name>
+        <operatorName>ThugTalk</operatorName>
+        <payroll>777</payroll>
+        <callPrices>
+            <innerPrice>0</innerPrice>
+            <outerPrice>0</outerPrice>
+            <fixedLocation>0</fixedLocation>
+        </callPrices>
+        <smsPrice>0</smsPrice>
+        <parameters>
+            <connectionFee>777</connectionFee>
+            <tarriffing>none</tarriffing>
+        </parameters>
+    </tariff>
+</t:tariffs>
