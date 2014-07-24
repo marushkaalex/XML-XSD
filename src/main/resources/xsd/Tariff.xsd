@@ -2,16 +2,17 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://example.com/tariffs"
            xmlns="http://example.com/tariffs">
-    <xs:include schemaLocation="callpricesType.xsd"/>
-    <xs:include schemaLocation="parametersType.xsd"/>
-    <xs:complexType name="tariffType">
+    <xs:include schemaLocation="CallPrices.xsd"/>
+    <xs:include schemaLocation="Parameters.xsd"/>
+
+    <xs:complexType name="Tariff">
         <xs:all minOccurs="1">
             <xs:element name="name" type="xs:string"/>
             <xs:element name="operatorName" type="xs:string"/>
             <xs:element name="payroll" type="xs:decimal"/>
-            <xs:element name="callPrices" type="callPricesType"/>
+            <xs:element name="callPrices" type="CallPrices"/>
             <xs:element name="smsPrice" type="xs:decimal"/>
-            <xs:element name="parameters" type="parametersType"/>
+            <!--<xs:element name="parameters" type="Parameters"/>-->
         </xs:all>
     </xs:complexType>
 </xs:schema>

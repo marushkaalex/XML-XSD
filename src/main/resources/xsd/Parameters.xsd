@@ -2,10 +2,10 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://example.com/tariffs"
            xmlns="http://example.com/tariffs">
-    <xs:include schemaLocation="favoriteNumbersType.xsd"/>
-    <xs:complexType name="parametersType">
+    <xs:include schemaLocation="FavoriteNumbers.xsd"/>
+    <xs:complexType name="Parameters">
         <xs:all>
-            <xs:element name="favoriteNumbers" type="favoriteNumbersType" minOccurs="0"/>
+            <xs:element name="favoriteNumbers" type="FavoriteNumbers" minOccurs="0"/>
             <xs:element name="tarriffing" minOccurs="0">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">

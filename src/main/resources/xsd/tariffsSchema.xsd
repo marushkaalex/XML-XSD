@@ -2,7 +2,12 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://example.com/tariffs"
            xmlns="http://example.com/tariffs">
-    <xs:include schemaLocation="tariffsType.xsd"/>
-    <xs:element name="tariffs" type="tariffsType">
-    </xs:element>
+    <xs:include schemaLocation="Tariff.xsd"/>
+    <xs:element name="tariffs" type="Tariffs"/>
+
+    <xs:complexType name="Tariffs">
+        <xs:sequence>
+            <xs:element name="tariff" type="Tariff" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

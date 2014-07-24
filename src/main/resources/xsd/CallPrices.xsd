@@ -2,8 +2,9 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://example.com/tariffs"
            xmlns="http://example.com/tariffs">
-    <xs:complexType name="callPricesType">
-        <xs:all minOccurs="1">
+
+    <xs:complexType name="CallPrices">
+    <xs:all minOccurs="1">
             <xs:element name="innerPrice">
                 <xs:simpleType>
                     <xs:restriction base="xs:decimal">
