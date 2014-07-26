@@ -1,18 +1,18 @@
 
 package com.epam.am.entity;
 
-import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.math.BigDecimal;
 
 
 /**
  * <p>Java class for Tariff complex type.
- * 
+ * <p/>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p/>
  * <pre>
  * &lt;complexType name="Tariff">
  *   &lt;complexContent>
@@ -29,8 +29,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Tariff", namespace = "http://example.com/tariffs", propOrder = {
@@ -53,11 +51,9 @@ public class Tariff {
 
     /**
      * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getName() {
         return name;
@@ -65,11 +61,9 @@ public class Tariff {
 
     /**
      * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setName(String value) {
         this.name = value;
@@ -77,11 +71,9 @@ public class Tariff {
 
     /**
      * Gets the value of the operatorName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getOperatorName() {
         return operatorName;
@@ -89,11 +81,9 @@ public class Tariff {
 
     /**
      * Sets the value of the operatorName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setOperatorName(String value) {
         this.operatorName = value;
@@ -101,11 +91,9 @@ public class Tariff {
 
     /**
      * Gets the value of the payroll property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @return possible object is
+     * {@link BigDecimal }
      */
     public BigDecimal getPayroll() {
         return payroll;
@@ -113,11 +101,9 @@ public class Tariff {
 
     /**
      * Sets the value of the payroll property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigDecimal }
      */
     public void setPayroll(BigDecimal value) {
         this.payroll = value;
@@ -125,11 +111,9 @@ public class Tariff {
 
     /**
      * Gets the value of the callPrices property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CallPrices }
-     *     
+     *
+     * @return possible object is
+     * {@link CallPrices }
      */
     public CallPrices getCallPrices() {
         return callPrices;
@@ -137,11 +121,9 @@ public class Tariff {
 
     /**
      * Sets the value of the callPrices property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CallPrices }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link CallPrices }
      */
     public void setCallPrices(CallPrices value) {
         this.callPrices = value;
@@ -149,11 +131,9 @@ public class Tariff {
 
     /**
      * Gets the value of the smsPrice property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @return possible object is
+     * {@link BigDecimal }
      */
     public BigDecimal getSmsPrice() {
         return smsPrice;
@@ -161,11 +141,9 @@ public class Tariff {
 
     /**
      * Sets the value of the smsPrice property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigDecimal }
      */
     public void setSmsPrice(BigDecimal value) {
         this.smsPrice = value;
@@ -173,11 +151,9 @@ public class Tariff {
 
     /**
      * Gets the value of the parameters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Parameters }
-     *     
+     *
+     * @return possible object is
+     * {@link Parameters }
      */
     public Parameters getParameters() {
         return parameters;
@@ -185,14 +161,23 @@ public class Tariff {
 
     /**
      * Sets the value of the parameters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Parameters }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Parameters }
      */
     public void setParameters(Parameters value) {
         this.parameters = value;
     }
 
+    @Override
+    public String toString() {
+        return "\nTariff{" +
+                "\nname='" + name + '\'' +
+                ", \noperatorName='" + operatorName + '\'' +
+                ", \npayroll=" + payroll +
+                ", \ncallPrices=" + callPrices +
+                ", \nsmsPrice=" + smsPrice +
+                ", \nparameters=" + parameters +
+                '}';
+    }
 }

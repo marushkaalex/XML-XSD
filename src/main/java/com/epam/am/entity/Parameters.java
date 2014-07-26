@@ -1,17 +1,17 @@
 
 package com.epam.am.entity;
 
-import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
+import java.math.BigDecimal;
 
 
 /**
  * <p>Java class for Parameters complex type.
- * 
+ * <p/>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p/>
  * <pre>
  * &lt;complexType name="Parameters">
  *   &lt;complexContent>
@@ -40,8 +40,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Parameters", namespace = "http://example.com/tariffs", propOrder = {
@@ -55,11 +53,9 @@ public class Parameters {
 
     /**
      * Gets the value of the favoriteNumbers property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isFavoriteNumbers() {
         return favoriteNumbers;
@@ -67,11 +63,9 @@ public class Parameters {
 
     /**
      * Sets the value of the favoriteNumbers property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setFavoriteNumbers(Boolean value) {
         this.favoriteNumbers = value;
@@ -79,11 +73,9 @@ public class Parameters {
 
     /**
      * Gets the value of the tarriffing property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTarriffing() {
         return tarriffing;
@@ -91,11 +83,9 @@ public class Parameters {
 
     /**
      * Sets the value of the tarriffing property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTarriffing(String value) {
         this.tarriffing = value;
@@ -103,11 +93,9 @@ public class Parameters {
 
     /**
      * Gets the value of the connectionFee property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @return possible object is
+     * {@link BigDecimal }
      */
     public BigDecimal getConnectionFee() {
         return connectionFee;
@@ -115,14 +103,20 @@ public class Parameters {
 
     /**
      * Sets the value of the connectionFee property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigDecimal }
      */
     public void setConnectionFee(BigDecimal value) {
         this.connectionFee = value;
     }
 
+    @Override
+    public String toString() {
+        return "\nParameters{" +
+                "\nfavoriteNumbers=" + favoriteNumbers +
+                ", \ntarriffing='" + tarriffing + '\'' +
+                ", \nconnectionFee=" + connectionFee +
+                '}';
+    }
 }

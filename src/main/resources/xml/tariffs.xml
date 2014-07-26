@@ -2,7 +2,7 @@
 <t:tariffs xmlns:t="http://example.com/tariffs"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://example.com/tariffs ../xsd/tariffsSchema.xsd">
-    <tariff>
+    <tariff at="asad">
         <name>Pay more - talk less!</name>
         <operatorName>GreedyCom</operatorName>
         <payroll>150</payroll>
@@ -14,10 +14,7 @@
         <smsPrice>10</smsPrice>
         <parameters>
             <connectionFee>500</connectionFee>
-            <favoriteNumbers>
-                <number>+7-707-154-15-44</number>
-                <number>8-505-555-55-55</number>
-            </favoriteNumbers>
+            <favoriteNumbers>true</favoriteNumbers>
         </parameters>
     </tariff>
     <tariff>

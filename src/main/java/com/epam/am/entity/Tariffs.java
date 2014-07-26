@@ -1,12 +1,12 @@
 
 package com.epam.am.entity;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -66,4 +66,10 @@ public class Tariffs {
         return this.tariff;
     }
 
+    @Override
+    public String toString() {
+        return "Tariffs{" +
+                "\ntariff=" + tariff +
+                '}';
+    }
 }

@@ -1,18 +1,18 @@
 
 package com.epam.am.entity;
 
-import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.math.BigDecimal;
 
 
 /**
  * <p>Java class for CallPrices complex type.
- * 
+ * <p/>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p/>
  * <pre>
  * &lt;complexType name="CallPrices">
  *   &lt;complexContent>
@@ -44,8 +44,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CallPrices", namespace = "http://example.com/tariffs", propOrder = {
@@ -62,11 +60,9 @@ public class CallPrices {
 
     /**
      * Gets the value of the innerPrice property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @return possible object is
+     * {@link BigDecimal }
      */
     public BigDecimal getInnerPrice() {
         return innerPrice;
@@ -74,11 +70,9 @@ public class CallPrices {
 
     /**
      * Sets the value of the innerPrice property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigDecimal }
      */
     public void setInnerPrice(BigDecimal value) {
         this.innerPrice = value;
@@ -86,11 +80,9 @@ public class CallPrices {
 
     /**
      * Gets the value of the outerPrice property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @return possible object is
+     * {@link BigDecimal }
      */
     public BigDecimal getOuterPrice() {
         return outerPrice;
@@ -98,11 +90,9 @@ public class CallPrices {
 
     /**
      * Sets the value of the outerPrice property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigDecimal }
      */
     public void setOuterPrice(BigDecimal value) {
         this.outerPrice = value;
@@ -110,11 +100,9 @@ public class CallPrices {
 
     /**
      * Gets the value of the fixedLocation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @return possible object is
+     * {@link BigDecimal }
      */
     public BigDecimal getFixedLocation() {
         return fixedLocation;
@@ -122,14 +110,20 @@ public class CallPrices {
 
     /**
      * Sets the value of the fixedLocation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigDecimal }
      */
     public void setFixedLocation(BigDecimal value) {
         this.fixedLocation = value;
     }
 
+    @Override
+    public String toString() {
+        return "\nCallPrices{" +
+                "\ninnerPrice=" + innerPrice +
+                ", \nouterPrice=" + outerPrice +
+                ", \nfixedLocation=" + fixedLocation +
+                '}';
+    }
 }

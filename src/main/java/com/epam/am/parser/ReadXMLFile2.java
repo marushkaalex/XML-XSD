@@ -1,4 +1,4 @@
-package com.epam.am;
+package com.epam.am.parser;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

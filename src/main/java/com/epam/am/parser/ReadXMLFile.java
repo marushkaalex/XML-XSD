@@ -1,4 +1,4 @@
-package com.epam.am;
+package com.epam.am.parser;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
