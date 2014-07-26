@@ -12,7 +12,7 @@
             <xs:element name="payroll" type="xs:decimal"/>
             <xs:element name="callPrices" type="CallPrices"/>
             <xs:element name="smsPrice" type="xs:decimal"/>
-            <!--<xs:element name="parameters" type="Parameters"/>-->
+            <xs:element name="parameters" type="Parameters"/>
         </xs:all>
     </xs:complexType>
 </xs:schema>

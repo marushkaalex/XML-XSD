@@ -23,6 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="payroll" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
  *         &lt;element name="callPrices" type="{http://example.com/tariffs}CallPrices"/>
  *         &lt;element name="smsPrice" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
+ *         &lt;element name="parameters" type="{http://example.com/tariffs}Parameters"/>
  *       &lt;/all>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -47,6 +48,8 @@ public class Tariff {
     protected CallPrices callPrices;
     @XmlElement(required = true)
     protected BigDecimal smsPrice;
+    @XmlElement(required = true)
+    protected Parameters parameters;
 
     /**
      * Gets the value of the name property.
@@ -166,6 +169,30 @@ public class Tariff {
      */
     public void setSmsPrice(BigDecimal value) {
         this.smsPrice = value;
+    }
+
+    /**
+     * Gets the value of the parameters property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Parameters }
+     *     
+     */
+    public Parameters getParameters() {
+        return parameters;
+    }
+
+    /**
+     * Sets the value of the parameters property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Parameters }
+     *     
+     */
+    public void setParameters(Parameters value) {
+        this.parameters = value;
     }
 
 }

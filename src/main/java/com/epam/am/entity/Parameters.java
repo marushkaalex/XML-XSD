@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;all>
- *         &lt;element name="favoriteNumbers" type="{http://example.com/tariffs}FavoriteNumbers" minOccurs="0"/>
+ *         &lt;element name="favoriteNumbers" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="tarriffing" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -49,7 +49,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Parameters {
 
-    protected FavoriteNumbers favoriteNumbers;
+    protected Boolean favoriteNumbers;
     protected String tarriffing;
     protected BigDecimal connectionFee;
 
@@ -58,10 +58,10 @@ public class Parameters {
      * 
      * @return
      *     possible object is
-     *     {@link FavoriteNumbers }
+     *     {@link Boolean }
      *     
      */
-    public FavoriteNumbers getFavoriteNumbers() {
+    public Boolean isFavoriteNumbers() {
         return favoriteNumbers;
     }
 
@@ -70,10 +70,10 @@ public class Parameters {
      * 
      * @param value
      *     allowed object is
-     *     {@link FavoriteNumbers }
+     *     {@link Boolean }
      *     
      */
-    public void setFavoriteNumbers(FavoriteNumbers value) {
+    public void setFavoriteNumbers(Boolean value) {
         this.favoriteNumbers = value;
     }
 

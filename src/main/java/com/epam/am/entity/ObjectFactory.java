@@ -42,14 +42,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FavoriteNumbers }
-     * 
-     */
-    public FavoriteNumbers createFavoriteNumbers() {
-        return new FavoriteNumbers();
-    }
-
-    /**
      * Create an instance of {@link Parameters }
      * 
      */
