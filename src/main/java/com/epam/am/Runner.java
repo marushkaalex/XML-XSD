@@ -1,7 +1,7 @@
 package com.epam.am;
 
 import com.epam.am.entity.Tariff;
-import com.epam.am.parser.DomParser;
+import com.epam.am.parser.StaxParser;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -16,7 +16,8 @@ public class Runner {
 //        ReadXMLFile2.method();
         List<Tariff> tariffs = new ArrayList<Tariff>();
 //        SaxParser.parse(Runner.class.getClassLoader().getResourceAsStream("xml/tariffs.xml"), new SaxHandler(tariffs));
-        DomParser.parse(Runner.class.getClassLoader().getResourceAsStream("xml/tariffs.xml"), tariffs);
+//        DomParser.parse(Runner.class.getClassLoader().getResourceAsStream("xml/tariffs.xml"), tariffs);
+        StaxParser.parse(Runner.class.getClassLoader().getResourceAsStream("xml/tariffs.xml"), tariffs);
         System.out.println(tariffs);
     }
 }
